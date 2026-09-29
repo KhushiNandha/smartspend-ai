@@ -1,0 +1,208 @@
+/* SmartSpend AI - Modern FinTech Design System */
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+html, body, [class*="css"] {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* Custom Card Container */
+.metric-card {
+    background: linear-gradient(135deg, rgba(30, 41, 59, 0.7) 0%, rgba(15, 23, 42, 0.9) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    padding: 20px 24px;
+    box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(12px);
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.metric-card:hover {
+    transform: translateY(-2px);
+    border-color: rgba(16, 185, 129, 0.3);
+}
+
+.metric-title {
+    font-size: 0.82rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #94A3B8;
+    margin-bottom: 6px;
+}
+
+.metric-value {
+    font-size: 1.85rem;
+    font-weight: 800;
+    color: #F8FAFC;
+    line-height: 1.2;
+}
+
+.metric-delta {
+    display: inline-flex;
+    align-items: center;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-top: 6px;
+}
+
+.delta-positive {
+    color: #10B981;
+}
+
+.delta-negative {
+    color: #EF4444;
+}
+
+.delta-neutral {
+    color: #94A3B8;
+}
+
+/* Status Badges */
+.badge {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.badge-ai {
+    background: rgba(16, 185, 129, 0.15);
+    color: #34D399;
+    border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.badge-fallback {
+    background: rgba(245, 158, 11, 0.15);
+    color: #FBBF24;
+    border: 1px solid rgba(245, 158, 11, 0.3);
+}
+
+.badge-alert {
+    background: rgba(239, 68, 68, 0.15);
+    color: #F87171;
+    border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
+/* Hero Section */
+.hero-container {
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.12) 0%, rgba(56, 189, 248, 0.08) 50%, rgba(15, 23, 42, 0) 100%);
+    border: 1px solid rgba(16, 185, 129, 0.2);
+    border-radius: 20px;
+    padding: 40px 32px;
+    margin-bottom: 28px;
+    text-align: center;
+}
+
+.hero-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    background: linear-gradient(90deg, #34D399 0%, #38BDF8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 12px;
+}
+
+.hero-tagline {
+    font-size: 1.15rem;
+    color: #CBD5E1;
+    max-width: 680px;
+    margin: 0 auto 24px auto;
+    line-height: 1.6;
+}
+
+/* Feature Cards */
+.feature-card {
+    background: rgba(30, 41, 59, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 14px;
+    padding: 22px 20px;
+    height: 100%;
+}
+
+.feature-icon {
+    font-size: 1.8rem;
+    margin-bottom: 12px;
+    display: inline-block;
+}
+
+.feature-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #F1F5F9;
+    margin-bottom: 8px;
+}
+
+.feature-desc {
+    font-size: 0.9rem;
+    color: #94A3B8;
+    line-height: 1.5;
+}
+
+/* Disclaimer Footer Note */
+.disclaimer-box {
+    margin-top: 30px;
+    padding: 12px 18px;
+    background: rgba(30, 41, 59, 0.4);
+    border-left: 3px solid #64748B;
+    border-radius: 0 8px 8px 0;
+    font-size: 0.8rem;
+    color: #94A3B8;
+    font-style: italic;
+}
+
+/* Insight Cards */
+.insight-card {
+    background: rgba(30, 41, 59, 0.85);
+    border-radius: 12px;
+    padding: 16px 20px;
+    margin-bottom: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.insight-card-warning {
+    border-left: 4px solid #F59E0B;
+}
+
+.insight-card-danger {
+    border-left: 4px solid #EF4444;
+}
+
+.insight-card-success {
+    border-left: 4px solid #10B981;
+}
+
+.insight-card-info {
+    border-left: 4px solid #38BDF8;
+}
+
+/* Chips styling */
+div[data-testid="stHorizontalBlock"] button[kind="secondary"] {
+    border-radius: 20px !important;
+    font-size: 0.85rem !important;
+}
+
+/* Sidebar Branding */
+.sidebar-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 0 20px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    margin-bottom: 20px;
+}
+
+.brand-text h2 {
+    font-size: 1.3rem;
+    font-weight: 800;
+    margin: 0;
+    color: #F8FAFC;
+}
+
+.brand-text span {
+    font-size: 0.75rem;
+    color: #10B981;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+}

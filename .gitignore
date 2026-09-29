@@ -1,0 +1,22 @@
+# Python & Virtual Env
+venv/
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+
+# Streamlit secrets & local config
+.streamlit/secrets.toml
+
+# Environment Variables
+.env
+
+# SQLite local databases
+*.db
+*.sqlite3
+
+# OS files
+.DS_Store
+Thumbs.db
