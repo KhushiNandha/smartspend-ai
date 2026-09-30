@@ -7,7 +7,7 @@
 
 > **Evaluation Domain:** Generative AI / Applied FinTech  
 > **Project Scope:** Smartbridge Internship Final Evaluation  
-> **Live Demo:** [https://smartspend-ai.streamlit.app](https://smartspend-ai.streamlit.app) *(Streamlit Cloud Deployment)*
+> **Live Demo:** [https://smartspend-ai-by-khushi.streamlit.app/](https://smartspend-ai-by-khushi.streamlit.app/) *(Streamlit Cloud Deployment)*
 
 ---
 
@@ -169,9 +169,7 @@ flowchart TD
 5. **Run the application:**
    ```bash
    streamlit run app.py
-   ```
-   Open your browser at `http://localhost:8501`.
-
+   ``
 ---
 
 ## 🧪 6. Running Unit Tests
