@@ -14,28 +14,28 @@ RULES:
 1. If the input contains single or multiple transactions (up to 20), extract ALL of them.
 2. Format as a strict JSON array of transaction objects:
 [
-  {
+  {{
     "date": "YYYY-MM-DD",
     "description": "Short clean vendor or purpose",
     "category": "One of: Salary, Freelance, Investment, Rent, Groceries, Food & Dining, Bills & Utilities, EMI & Loans, Shopping, Travel & Commute, Healthcare, Subscriptions, Entertainment, Other",
     "type": "expense" or "income",
     "amount": numeric_value_in_INR,
     "payment_mode": "UPI, Credit Card, Debit Card, Net Banking, or Cash"
-  }
+  }}
 ]
 3. Date Handling:
    - "today" or "aaj" = use CURRENT_DATE: {current_date}
    - "yesterday" or "kal" = {yesterday_date}
    - If no date is specified, default to CURRENT_DATE: {current_date}.
 4. Amount & Currency:
-   - Handle Indian terms: "rupay", "rs", "inr", "k", "hazaar", "lakh". E.g., "20 rupay" = 20, "1.5k" = 1500, "1 lakh" = 100000.
+   - Handle Indian terms: "rupay", "rs", "inr", "k", "hazaar", "lakh".
 5. Clarification Rule:
-   - If the amount or transaction details are completely ambiguous or missing (e.g. "I had dinner outside", "Bought groceries", "Chai pi li"), do NOT make up an amount. Return:
-   {
+   - If the amount or transaction details are completely ambiguous or missing, do NOT make up an amount. Return:
+   {{
      "needs_clarification": true,
      "clarification_question": "A polite single question in the user's language asking for the missing amount or detail."
-   }
-6. Output ONLY valid JSON. Do not include markdown code fence formatting like ```json or any conversational filler.
+   }}
+6. Output ONLY valid JSON.
 """
 
 CHAT_ASSISTANT_PROMPT = """

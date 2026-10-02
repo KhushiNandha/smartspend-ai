@@ -95,20 +95,7 @@ with st.sidebar:
     """, unsafe_allow_html=True)
     st.caption(status["message"])
 
-    # Optional Gemini API Key Override Expander for Reviewer
-    with st.expander("🔑 Configure Gemini API Key", expanded=False):
-        st.write("Optional: Provide a personal Gemini API Key from Google AI Studio. If left blank, the built-in intelligent rule-based engine runs seamlessly.")
-        custom_key = st.text_input(
-            "Gemini API Key",
-            type="password",
-            value=st.session_state.get("custom_gemini_key", ""),
-            placeholder="AIzaSy...",
-            key="custom_gemini_key_input"
-        )
-        if st.button("Apply API Key", use_container_width=True):
-            st.session_state["custom_gemini_key"] = custom_key
-            st.success("API key updated!")
-            st.rerun()
+    # Optional Gemini API Key Override Expander for Reviewer- CHANGES
 
     st.markdown("<hr style='border-color: rgba(255,255,255,0.08); margin: 18px 0;'/>", unsafe_allow_html=True)
 
