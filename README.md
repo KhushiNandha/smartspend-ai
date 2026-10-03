@@ -4,7 +4,13 @@ SmartSpend AI is a personal finance analytics application designed to help users
 
 Users can add transactions using natural-language descriptions, import financial records from supported CSV/Excel files or PDF statements, or enter transactions manually. The application converts this information into structured transaction data and presents it through dashboards, insights, savings goals, and reports.
 
-**Live Demo:** [SmartSpend AI](https://smartspend-ai-by-khushi.streamlit.app/)
+## Live Demo
+
+<p align="center">
+  <img src="assets/Homepage.png" alt="SmartSpend AI Homepage" width="900">
+</p>
+
+**Live Demo:** [SmartSpend AI](https://smartspend-ai-assist.streamlit.app/)
 
 ---
 
